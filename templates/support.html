@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laboratory Test Result Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='footer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ocr.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='zoom.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fade-in-animation.css') }}">
+</head>
+    <style>
+
+        .faq{
+            max-width: 60%;
+            background-color: #8ca1d8;
+            background: linear-gradient(180deg, #f5f5f5 0%, #f0f0f0 100%);
+            border-radius: 8px;
+            font-size: 20px;
+            padding: 20px;
+            margin-left : 20% ;
+            margin-right: 20%;
+            box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1);
+
+        }
+        
+        .Intro{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 32px;
+            font-size: 26px;
+        
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Laboratory Test Result Analysis</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('support') }}">Support</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <p class="Intro";>How can we help you?</p>
+    <div>
+     <div class="faq fade-in-image zoom">
+            <h3>Frequently Asked Questions (FAQ)</h3>
+            <p class="q1"><strong>Q: What are the laboratory test results used for?</strong></p>
+            <p>A:</p>
+
+            <p><strong>Q: How long does it take to receive laboratory test results?</strong></p>
+            <p>A:</p>
+        </div>
+      
+    </div>
+    <footer>
+        <p>&copy; 2024 Laboratory Test Result Analysis</p>
+    </footer>
+</body>
+</html>
+

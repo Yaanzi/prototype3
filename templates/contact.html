@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='footer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ocr.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='zoom.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fade-in-animation.css') }}">
+</head>
+</head>
+<body>
+    <header>
+        <h1>Laboratory Test Result Analysis</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('support') }}">Support</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container1">
+        <div class="container fade-in-image zoom">
+            <h2>Contact Us</h2>
+            <p>If you have any inquiries or feedback, please don't hesitate to reach out to us:</p>
+            <ul>
+                <li>Email: contact@example.com</li>
+                <li>Phone: +1-123-456-7890</li>
+                <li>Address: 123 Main Street, City, Country</li>
+            </ul>
+        </div>
+
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Laboratory Test Result Analysis</p>
+    </footer>
+</body>
+</html>

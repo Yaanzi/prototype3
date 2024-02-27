@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laboratory Test Result Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='footer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ocr.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='zoom.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fade-in-animation.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Laboratory Test Result Analysis</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('support') }}">Support</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container1">
+        <div class="container fade-in-image zoom">{{ output }}</div>
+    </div>
+    
+</body>
+<footer> <p>&copy; 2024 Laboratory Test Result Analysis</p></footer>
+</html>

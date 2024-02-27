@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laboratory Test Result Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='footer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ocr.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='zoom.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fade-in-animation.css') }}">
+</head>
+ 
+</head>
+<body>
+    <header>
+        <h1>Laboratory Test Result Analysis</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('support') }}">Support</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container1">
+        <div class="container fade-in-image zoom">
+            <h2>Welcome!</h2>
+            <p>Welcome to our laboratory test result analysis system, where interpretation is just one click away. Powered by GPT-3, our platform revolutionizes the way you understand your test results.
+            Founded by researchers from General De Jesus College, we strive to provide intuitive and efficient solutions for medical analysis. With our cutting-edge technology, we aim to simplify the complexity of interpreting laboratory tests, empowering you with comprehensive insights into your health.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Laboratory Test Result Analysis</p>
+    </footer>
+</body>
+</html>
